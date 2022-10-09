@@ -121,6 +121,7 @@ export const VCSProvider = ({ children }: VCSType) => {
         preset: 'custom',
         composition_id: 'daily:baseline',
         composition_params: { ...params },
+        // @ts-ignore
         participants: {
           video: lp,
           audio: lp,

@@ -7,12 +7,13 @@ import { useCall } from '../../contexts/CallProvider';
 
 const VideoSettings = () => {
   const { callObject } = useCall();
-
+  //@ts-ignore
   const onMediaPlayerStarted = e => {
     console.log('my cool handler', e);
     setPlaybackState('playing');
     setPlaybackId(e.session_id);
   };
+  //@ts-ignore
   const onMediaPlayerUpdated = e => {
     console.log('updated e is', e);
     switch (e.remoteMediaPlayerState.state) {
@@ -25,9 +26,11 @@ const VideoSettings = () => {
     }
     setPlaybackState('paused');
   };
+  //@ts-ignore
   const onMediaPlayerStopped = e => {
     setPlaybackState('stopped');
   };
+  //@ts-ignore
   const onMediaPlayerError = e => {
     setPlaybackState('stopped');
   };
@@ -131,6 +134,7 @@ const VideoSettings = () => {
               name="url"
               label="Video URL"
               value={videoURL}
+              /* @ts-ignore */
               onChange={e => setVideoURL(e.target.value)}
             />
             <Button
