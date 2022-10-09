@@ -31,12 +31,18 @@ const LiveView = ({ compositionReadyCb, viewportSize, startStream }: Props) => {
     startRecording,
     stopRecording,
     stopStreaming,
+    setRtmpUrl,
+    rtmpUrl,
+    startStreaming,
   } = useVCS();
   const localParticipant = useLocalParticipant();
 
   const handleStreamToggle = () => {
-    if (isLiveStreaming) stopStreaming();
-    else startStream(true);
+    if (isLiveStreaming) {
+      stopStreaming();
+    } else {
+      startStreaming();
+    }
   };
 
   const handleRecordingToggle = () => {
