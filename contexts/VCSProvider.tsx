@@ -115,7 +115,8 @@ export const VCSProvider = ({ children }: VCSType) => {
     console.log('vcs provider starting live streaming to: ', rtmpUrl);
     callObject.startLiveStreaming({
       rtmpUrl: `${process.env.NEXT_PUBLIC_IVS_RTMP_URL}${process.env.NEXT_PUBLIC_IVS_STREAM_KEY}`,
-      fps: 30,
+      width: 1280,
+      height: 720,
       layout: {
         // @ts-ignore
         preset: 'custom',
