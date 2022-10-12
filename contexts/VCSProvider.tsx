@@ -101,7 +101,7 @@ export const VCSProvider = ({ children }: VCSType) => {
       asset => (sessionAssets[`images/${asset}`] = assets[asset].url),
     );
     sessionAssets['components/CustomOverlay.js'] =
-      'https://daily-demuxed-2022.glitch.me/vcs.js';
+      'https://daily-demuxed.glitch.me/vcs.js';
     return sessionAssets;
   }, [assets]);
 
