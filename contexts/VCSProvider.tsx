@@ -102,6 +102,8 @@ export const VCSProvider = ({ children }: VCSType) => {
     );
     sessionAssets['components/CustomOverlay.js'] =
       'https://daily-demuxed.glitch.me/vcs.js';
+    sessionAssets['demuxed.png'] =
+      'https://cdn.glitch.global/6b5fe90d-e616-42db-81ac-2ff6c1626118/demuxed.png?v=1665586928187';
     return sessionAssets;
   }, [assets]);
 
