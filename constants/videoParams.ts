@@ -6,7 +6,7 @@ export const videoParams: Param[] = [
     label: 'Video URL',
     type: 'string',
     defaultValue:
-      'https://cdn.glitch.global/19d94244-6ec6-4f25-8081-f17f3afe6209/demuxed-2021.mp4?v=1664834487295',
+      'https://cdn.glitch.me/6b5fe90d-e616-42db-81ac-2ff6c1626118/BigBuckBunny.mp4',
   },
   {
     id: 'video.start',

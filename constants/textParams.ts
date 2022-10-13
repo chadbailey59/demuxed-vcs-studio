@@ -6,13 +6,13 @@ export const textParams: Param[] = [
     id: 'showTextOverlay',
     label: 'Show Text Overlay?',
     type: 'boolean',
-    defaultValue: false,
+    defaultValue: true,
   },
   {
     id: 'text.content',
     label: 'Text',
     type: 'string',
-    defaultValue: 'An example text overlay',
+    defaultValue: 'Get on this tv at chad-hq.daily.co/demuxed',
   },
   {
     id: 'text.align_horizontal',
@@ -25,7 +25,7 @@ export const textParams: Param[] = [
     id: 'text.align_vertical',
     label: 'Vertical Text Alignment',
     type: 'enum',
-    defaultValue: PositionVertical.CENTER,
+    defaultValue: PositionVertical.BOTTOM,
     values: Object.values(PositionVertical),
   },
   {
@@ -38,7 +38,7 @@ export const textParams: Param[] = [
     id: 'text.offset_y',
     label: 'Y offset to text overlay position',
     type: 'number',
-    defaultValue: 0,
+    defaultValue: 20,
   },
   {
     id: 'text.rotationInDegrees',
@@ -52,7 +52,7 @@ export const textParams: Param[] = [
     id: 'text.fontWeight',
     label: 'Font Weight',
     type: 'enum',
-    defaultValue: '400',
+    defaultValue: '500',
     values: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   },
   {
@@ -77,7 +77,7 @@ export const textParams: Param[] = [
     id: 'text.fontSize_percentageOfViewH',
     label: 'Font Size',
     type: 'range',
-    defaultValue: 7,
+    defaultValue: 6,
     min: 0,
     max: 100,
   },
@@ -85,7 +85,7 @@ export const textParams: Param[] = [
     id: 'text.color',
     label: 'Text Color',
     type: 'color',
-    defaultValue: '#FFFAC8',
+    defaultValue: '#FFFFFF',
   },
   {
     id: 'text.strokeColor',
